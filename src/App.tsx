@@ -1,10 +1,8 @@
-import Data from './components/Data'
+
 const App = () => {
   return (
-    <div className="">
-      <Data />
-    </div>
-  );
-};
+    <div className="text-center">App</div>
+  )
+}
 
 export default App;
