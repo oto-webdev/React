@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import State from './hooks/State';
+import Effect from './hooks/Effect';
 
 const App = () => {
   return (
     <div className=''> 
-      <State />
+     <Effect />
     </div>
   )
 }
