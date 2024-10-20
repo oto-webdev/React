@@ -1,11 +1,8 @@
-import Counter from "./components/Counter";
-
-{/*import User from "./components/User";*/}
-
+import Data from './components/Data'
 const App = () => {
   return (
     <div className="">
-      <Counter />
+      <Data />
     </div>
   );
 };
