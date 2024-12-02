@@ -1,8 +1,11 @@
 import React from 'react'
+import Api from '../components/api/Api'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <Api />
+    </div>
   )
 }
 
