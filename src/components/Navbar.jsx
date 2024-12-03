@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { navbarMenu } from "./data/data";
 import { CiSearch } from "react-icons/ci";
 import { FaDumbbell } from "react-icons/fa";
 import { MdMenu } from "react-icons/md";
 import { PiShoppingCartThin } from "react-icons/pi";
+import { FaUser } from "react-icons/fa6";
 import Menu from "./Menu";
 
 const Navbar = () => {
@@ -24,7 +25,11 @@ const Navbar = () => {
             <ul className="flex items-center gap-6 text-gray-600">
               {navbarMenu.map((link) => {
                 return (
-                  <Link key={link.id} to={link.link} className="inline-block py-1 px-3 hover:text-primary font-semibold">
+                  <Link
+                    key={link.id}
+                    to={link.link}
+                    className="inline-block py-1 px-3 hover:text-primary font-semibold"
+                  >
                     {link.title}
                   </Link>
                 );
@@ -34,15 +39,17 @@ const Navbar = () => {
 
           <div className="flex items-center gap-4">
             <button className="text-2xl hover:bg-primary hover:text-white rounded-full p-2 duration-200">
-              <CiSearch className="search" />
+              <div className="">
+                <CiSearch className="search" />
+              </div>
             </button>
 
-            <button className="text-2xl hover:bg-primary hover:text-white rounded-full p-2 duration-200">
+            <button className="text-xl hover:bg-primary hover:text-white rounded-full p-2 duration-200">
               <PiShoppingCartThin className="cart" />
             </button>
 
-            <button className="hover:bg-primary text-primary font-semibold hover:text-white rounded-md border-2 border-primary duration-200 px-6 py-2 hidden md:block">
-              Login
+            <button className="hover:bg-primary text-primary font-semibold text-xl hover:text-white rounded-full border-2 border-primary duration-200 p-2 hidden md:block">
+              <FaUser />
             </button>
           </div>
 
@@ -57,4 +64,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar

@@ -47,7 +47,7 @@ const Api = () => {
         <button
           onClick={() => paginate(currentPage - 1)}
           disabled={currentPage === 1}
-          className="px-4 py-2 bg-blue-500 text-white rounded-l-md"
+          className="px-4 py-2 bg-gray-500 text-white rounded-l-md"
         >
           Prev
         </button>
@@ -57,7 +57,7 @@ const Api = () => {
           <button
             key={pageNumber + 1}
             onClick={() => paginate(pageNumber + 1)}
-            className={`px-4 py-2 ${currentPage === pageNumber + 1 ? 'bg-blue-500 text-white' : 'bg-white border border-gray-300'}`}
+            className={`px-4 py-2 ${currentPage === pageNumber + 1 ? 'bg-gray-500 text-white' : 'bg-white border border-gray-300'}`}
           >
             {pageNumber + 1}
           </button>
@@ -66,7 +66,7 @@ const Api = () => {
         <button
           onClick={() => paginate(currentPage + 1)}
           disabled={currentPage === totalPages}
-          className="px-4 py-2 bg-blue-500 text-white rounded-r-md"
+          className="px-4 py-2 bg-gray-500 text-white rounded-r-md"
         >
           Next
         </button>
@@ -75,4 +75,4 @@ const Api = () => {
   )
 }
 
-export default Api
+export default Api;

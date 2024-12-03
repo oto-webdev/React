@@ -6,6 +6,7 @@ import Project from "./pages/Project";
 import Service from "./pages/Service";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import NotFound from './pages/error/NotFound'
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/project" element={<Project />} />
           <Route path="/service" element={<Service />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <footer className="m-0 p-0">
