@@ -17,7 +17,7 @@ const Navbar = () => {
           <div className="text-2xl flex items-center gap-2 font-bold uppercase ">
             <FaDumbbell />
             <p className="coders">Coders</p>
-            <p className="text-secondary">Shop</p>
+            <p className="text-secondary">Blog</p>
           </div>
 
           <div className="hidden md:block">
